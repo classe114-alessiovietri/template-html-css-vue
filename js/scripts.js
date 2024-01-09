@@ -1,2 +1,12 @@
-// Test funzionamento
-console.log('Template HTML CSS JS');
+// Estraggo la funzione createApp dall'oggetto Vue
+const { createApp } = Vue;
+
+// Creo l'istanza di Vue da mondare in pagina
+createApp({
+    data() {
+        return {
+            message: 'Template HTML CSS Vue',
+        };
+    }
+  // Monto l'istanza di Vue in pagina
+}).mount('#app');
